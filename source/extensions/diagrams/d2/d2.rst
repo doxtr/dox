@@ -1,0 +1,15 @@
+.. index:: D2
+
+D2: Declarative Diagramming
+===========================
+
+Needs
+
+.. code-block:: sh
+
+   pip install metapensiero.sphinx.d2
+   # Maybe install d2 binary
+   curl -fsSL https://d2lang.com/install.sh | sh -s --
+
+.. d2:: example.d2
+   :caption: Hello

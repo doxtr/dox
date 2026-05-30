@@ -1,0 +1,64 @@
+{
+	"dd-part": {
+		"prefix": "dd-part",
+		"body": [
+			"${1/./#/g}",
+			"$1",
+			"${1/./#/g}",
+			"",
+			"$0"
+		],
+		"description": "#part# for restructured text"
+	},
+	"dd-chapter": {
+		"prefix": "dd-chapter",
+		"body": [
+			"${1/./*/g}",
+			"$1",
+			"${1/./*/g}",
+			"",
+			"$0"
+		],
+		"description": "*chapter* for restructured text"
+	},
+	"dd-section": {
+		"prefix": "dd-section",
+		"body": [
+			"$1",
+			"${1/./=/g}",
+			"",
+			"$0"
+		],
+		"description": "=section for restructured text"
+	},
+	"dd-sub-section": {
+		"prefix": "dd-sub-section",
+		"body": [
+			"$1",
+			"${1/./-/g}",
+			"",
+			"$0"
+		],
+		"description": "-sub-section for restructured text"
+	},
+	"dd-sub-sub-section": {
+		"prefix": "dd-sub-sub-section",
+		"body": [
+			"$1",
+			"${1/./^/g}",
+			"",
+			"$0"
+		],
+		"description": "-sub-sub-section for restructured text"
+	},
+	"dd-paragraph-section": {
+		"prefix": "dd-paragraph-section",
+		"body": [
+			"$1",
+			"${1/./\"/g}",
+			"",
+			"$0"
+		],
+		"description": "-paragraph-section for restructured text"
+	}
+}

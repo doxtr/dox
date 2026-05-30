@@ -1,0 +1,14 @@
+Login: {
+   label: MyCom Login
+   lb: LoadBalancer;
+   waf: Web Application Firewall;
+   nginx: Rate Limiter;
+   lms: Login Microservice;
+   as: Account Service;
+   mail: Mail Server;
+
+
+   lb -> waf -> nginx -> lms
+   lms -> as
+   lms -> mail
+}

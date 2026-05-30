@@ -1,0 +1,19 @@
+  title OpenID Connect Flow - Mobile
+  MobileApp -> AuthServer : Authorization Request
+  AuthServer -> Browser : Redirect
+  Browser -> MobileApp : Authorization Code
+  MobileApp -> TokenEndpoint : Token Exchange
+  TokenEndpoint -> MobileApp : Tokens
+  MobileApp -> ResourceServer : Access Resource
+  subgraph "Auth Server" {
+    AuthServer shape: image; icon: https://example.com/auth.png
+  }
+  subgraph "Token Endpoint" {
+    TokenEndpoint shape: image; icon: https://example.com/token.png
+  }
+  subgraph "Resource Server" {
+    ResourceServer shape: image; icon: https://example.com/resource.png
+  }
+  subgraph "System Browser" {
+    Browser shape: image; icon: https://example.com/browser.png
+  }

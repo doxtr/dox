@@ -1,0 +1,8 @@
+.DS_Store
+build
+__pycache__
+.vscode/xlink-files.json.code-snippets
+.vscode/xlink-needs.json.code-snippets
+.vscode/xlink-refs.json.code-snippets
+.vscode/xlink-tags.json.code-snippets
+.vscode/xlinks.json.code-snippets
