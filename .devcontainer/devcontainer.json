@@ -1,6 +1,6 @@
 {
 "name": "Doxamples",
-"image": "docker.io/authsec/docdash:0.0.11",
+"image": "docker.io/doxtr/reactor:0.0.1",
 "forwardPorts": [
     8018
 ],
