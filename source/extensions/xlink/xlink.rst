@@ -38,7 +38,7 @@ Using xlinks
 
 You can use xlinks, with the ``xlink`` role, to create links in your documentation. The syntax for using xlinks follows the format of a standard link in reStructuredText, but with the exception, that the link target is the unique-id of the xlink entry you want to link to. For example, if you have an xlink entry with the unique-id "rstPrimer", you can create a link to it like this: 
 
-.. code:: text
+.. code:: rst
 
    :xlink:`rstPrimer`
 
@@ -46,7 +46,7 @@ Which will render to :xlink:`rstPrimer`.
 
 Without any additional text, this will create a link with the text "reStructuredText Primer", which is given as the title in the xlink file. You can also specify the link text by using the standard reStructuredText link syntax, like this:
 
-.. code:: text
+.. code:: rst
 
    :xlink:`Link Text Override <xlink:rstPrimer>`
 
@@ -57,7 +57,7 @@ Listing xlinks
 
 xlinks can also be listed in your documentation using the ``xlink-list`` directive. This directive allows you to generate a list of links based on the tags specified in the xlink entries. For example, if you want to generate a list of all links that are saved in the `fundamentals.xlink` file, you can use the following directive:
 
-.. code:: text
+.. code:: rst
 
    .. xlink-list::
       :file: fundamentals.xlink
@@ -77,7 +77,7 @@ Tag-based xlink filters
 
 You can filter xlinks based on their tags when generating the list of links. For example, if you want to generate a list of all links that have the tag "rst", you can use the following directive:
 
-.. code:: text
+.. code:: rst
 
    .. xlink-list::
       :tags: rst
@@ -92,7 +92,7 @@ Combined Filtering
 
 You can also combine e.g. the file and tag filters to generate a list of links that are relevant to a specific topic or category. For example, if you want to generate a list of all links that are saved in the `fundamentals.xlink` file and have the tag "rst", you can use the following directive:
 
-.. code:: text
+.. code:: rst
 
    .. xlink-list::
       :files: fundamentals.xlink
@@ -109,7 +109,7 @@ Using the query engine
 
 xlinks can also be filtered using a query engine, which allows you to filter the links based on more complex criteria. For example, you can filter the links based on their title, url pattern, or unique-id field. This allows you to generate lists of links that are relevant to a specific topic or category, even if they do not have specific tags. For example, if you want to generate a list of all links that have the word "primer" in their title, you can use the following directive:
 
-.. code:: text
+.. code:: rst
 
    .. xlink-list::
       :query: re.search("um", title, re.IGNORECASE)
