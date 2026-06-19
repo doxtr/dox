@@ -77,7 +77,7 @@ Typewriter Container
 
 You can also create a typewriter container, which is a special type of container that is used to display content in a typewriter font. This can be useful for displaying code snippets or other types of content that you want to stand out from the rest of the text.
 
-You can create a typewriter container by using the ``:class:`` option with the value ``typewriter``, like this:
+You can create a typewriter container by adding the container class option ``typewriter``, like this:
 
 .. code-block:: rst
    :caption: Typewriter Container Example
@@ -89,3 +89,57 @@ You can create a typewriter container by using the ``:class:`` option with the v
 .. container:: typewriter
 
    This is the content of the typewriter container. It will be rendered in a typewriter font, which can be useful for displaying code snippets or other types of content that you want to stand out from the rest of the text.
+
+Highlight Section Container
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can also create a highlight section container, which is a special type of container that is used to highlight a section of content. This can be useful for drawing attention to important information or for providing additional context to the reader.
+
+You can create a highlight section container by adding the container class option ``highlight-section``, like this:
+
+.. code-block:: rst
+   :caption: Highlight Section Container Example
+
+   .. container:: highlight-section
+
+      This is the content of the highlight section container. It will be rendered with a different background color or border to make it stand out from the rest of the text, which can be useful for drawing attention to important information or for providing additional context to the reader.
+
+.. container:: highlight-section
+
+   This is the content of the highlight section container. It will be rendered with a different background color or border to make it stand out from the rest of the text, which can be useful for drawing attention to important information or for providing additional context to the reader.
+
+Participant A Container
+^^^^^^^^^^^^^^^^^^^^^^^
+
+You can also create a participant A container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+You can create a participant A container by adding the container class option ``participant-a``, like this:
+
+.. code-block:: rst
+   :caption: Participant A Container Example
+
+   .. container:: participant-a
+
+      This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+.. container:: participant-a
+
+   This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+Participant B Container
+^^^^^^^^^^^^^^^^^^^^^^^
+
+You can also create a participant B container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+You can create a participant B container by adding the container class option ``participant-b``, like this:
+
+.. code-block:: rst
+   :caption: Participant B Container Example
+
+   .. container:: participant-b
+
+      This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+.. container:: participant-b
+
+   This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
