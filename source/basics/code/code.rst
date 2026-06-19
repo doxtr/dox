@@ -44,6 +44,8 @@ You can use the ``code-block`` directive to show bash code in your documentation
 Showing Plain Text
 ------------------
 
+You can generate plain text with this code:
+
 .. code-block:: rst
    :caption: Showcase: Plain text code block
 
@@ -51,6 +53,8 @@ Showing Plain Text
       :caption: Showcase: Plain text code block
 
       This is a plain text code block. It will be rendered as a block of text with no syntax highlighting.
+
+Which will simply render the text as a block of text with no syntax highlighting. This can be useful for showing output from commands, or for showing code that does not require syntax highlighting.
 
 .. code-block:: text
    :caption: Showcase: Plain text code block
