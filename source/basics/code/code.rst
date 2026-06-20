@@ -44,7 +44,7 @@ You can use the ``code-block`` directive to show bash code in your documentation
 Showing Plain Text
 ------------------
 
-You can generate plain text with this code:
+You can showcase plain text with this code:
 
 .. code-block:: rst
    :caption: Showcase: Plain text code block
@@ -64,6 +64,8 @@ Which will simply render the text as a block of text with no syntax highlighting
 Showing Python Code
 -------------------
 
+Use this reStructuredText markup 
+
 .. code-block:: rst
    :caption: Showcase: Hello World in Python
 
@@ -73,16 +75,18 @@ Showing Python Code
       def hello_world():
           print("Hello, world!")
 
+to show Python code in your documentation:
+
 .. code-block:: python
    :caption: Showcase: Hello World in Python
 
    def hello_world():
        print("Hello, world!")
 
-This will render the code block with syntax highlighting for Python. You can also specify the language for syntax highlighting, such as ``.. code-block:: javascript`` for JavaScript code.
-
 Showing Java Code
 -----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Hello World in Java
@@ -96,6 +100,8 @@ Showing Java Code
          }
       }
 
+to show Java code in your documentation:
+
 .. code-block:: java
    :caption: Showcase: Hello World in Java
 
@@ -107,6 +113,8 @@ Showing Java Code
 
 Showing Kotlin Code
 -------------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Data class with extension function
@@ -128,6 +136,8 @@ Showing Kotlin Code
       val docdash = Theme("DocDash", "#183060", isDark = true)
       println("${docdash.name}: ${docdash.contrastColor()}")
 
+to show Kotlin code in your documentation:
+
 .. code-block:: kotlin
    :caption: Showcase: Data class with extension function
 
@@ -147,6 +157,8 @@ Showing Kotlin Code
 
 Showing Rust Code
 -----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Struct with Display trait
@@ -176,6 +188,8 @@ Showing Rust Code
           println!("Primary: {}", primary);
       }
 
+to show Rust code in your documentation:
+
 .. code-block:: rust
    :caption: Showcase: Struct with Display trait
 
@@ -203,6 +217,8 @@ Showing Rust Code
 
 Showing C Code
 --------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Struct and pointer usage
@@ -233,6 +249,8 @@ Showing C Code
           return 0;
       }
 
+to show C code in your documentation:
+
 .. code-block:: c
    :caption: Showcase: Struct and pointer usage
 
@@ -262,6 +280,8 @@ Showing C Code
 Showing C++ Code
 ----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Template class
 
@@ -288,6 +308,8 @@ Showing C++ Code
       private:
           std::vector<std::pair<std::string, T>> entries_;
       };
+
+to show C++ code in your documentation:
 
 .. code-block:: cpp
    :caption: Showcase: Template class
@@ -316,6 +338,8 @@ Showing C++ Code
 Showing C# Code
 ---------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Record and pattern matching
 
@@ -343,6 +367,8 @@ Showing C# Code
           };
       }
 
+to show C# code in your documentation:
+
 .. code-block:: csharp
    :caption: Showcase: Record and pattern matching
 
@@ -369,6 +395,8 @@ Showing C# Code
 
 Showing Go Code
 ---------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Structs and interfaces
@@ -407,6 +435,8 @@ Showing Go Code
           _ = strings.Join([]string{"a", "b"}, ", ")
       }
 
+to show Go code in your documentation:
+
 .. code-block:: go
    :caption: Showcase: Structs and interfaces
 
@@ -444,6 +474,8 @@ Showing Go Code
 Showing reStructuredText Code
 -----------------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: reStructuredText markup
 
@@ -468,6 +500,8 @@ Showing reStructuredText Code
            - Status
          * - PDF Output
            - Complete
+
+to show reStructuredText markup in your documentation:
 
 .. code-block:: rst
    :caption: Showcase: reStructuredText markup
@@ -494,6 +528,8 @@ Showing reStructuredText Code
 Showing Shell Script (sh) Code
 ------------------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: POSIX shell script
 
@@ -512,6 +548,8 @@ Showing Shell Script (sh) Code
       find "${PROJECT_DIR}/src" -name "*.rst" -exec cp {} "${BUILD_DIR}" \;
       echo "Done. $(ls "${BUILD_DIR}" | wc -l) files copied."
 
+to show a POSIX shell script in your documentation:
+
 .. code-block:: sh
    :caption: Showcase: POSIX shell script
 
@@ -529,6 +567,8 @@ Showing Shell Script (sh) Code
 
 Showing Zsh Code
 ----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Zsh associative arrays and globbing
@@ -554,6 +594,8 @@ Showing Zsh Code
       templates=( **/*.tex_t~build/** )
       print "Found ${#templates} templates"
 
+to show Zsh code in your documentation:
+
 .. code-block:: zsh
    :caption: Showcase: Zsh associative arrays and globbing
 
@@ -577,6 +619,8 @@ Showing Zsh Code
 
 Showing PowerShell Code
 -----------------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: PowerShell function with CmdletBinding
@@ -611,6 +655,8 @@ Showing PowerShell Code
 
       Build-Documentation -SourcePath "./source"
 
+to show PowerShell code in your documentation:
+
 .. code-block:: powershell
    :caption: Showcase: PowerShell function with CmdletBinding
 
@@ -644,6 +690,8 @@ Showing PowerShell Code
 Showing Markdown Code
 ---------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Markdown document with features
 
@@ -670,6 +718,8 @@ Showing Markdown Code
       | Code Blocks | Done   |
       | Admonitions | Done   |
 
+to show a Markdown document in your documentation:
+
 .. code-block:: markdown
    :caption: Showcase: Markdown document with features
 
@@ -695,6 +745,8 @@ Showing Markdown Code
 
 Showing HTML Code
 -----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Semantic HTML5 structure
@@ -726,6 +778,8 @@ Showing HTML Code
       </body>
       </html>
 
+to show HTML code in your documentation:
+
 .. code-block:: html
    :caption: Showcase: Semantic HTML5 structure
 
@@ -755,6 +809,8 @@ Showing HTML Code
 
 Showing CSS Code
 ----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: CSS custom properties and layout
@@ -786,6 +842,8 @@ Showing CSS Code
           overflow-x: auto;
       }
 
+to show CSS code in your documentation:
+
 .. code-block:: css
    :caption: Showcase: CSS custom properties and layout
 
@@ -815,6 +873,8 @@ Showing CSS Code
 
 Showing JavaScript Code
 -----------------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: ES2022 class with private fields
@@ -851,6 +911,8 @@ Showing JavaScript Code
       const engine = new ThemeEngine({ palette: { primary: '#183060' } });
       console.log(engine.resolveColor('dd:primary'));
 
+to show JavaScript code in your documentation:
+
 .. code-block:: javascript
    :caption: Showcase: ES2022 class with private fields
 
@@ -886,6 +948,8 @@ Showing JavaScript Code
 Showing TypeScript Code
 -----------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: TypeScript interfaces and generics
 
@@ -917,6 +981,8 @@ Showing TypeScript Code
           const amount = parseInt(parts[2] ?? '50', 10);
           return applyOperation(baseColor, operation, amount);
       }
+
+to show TypeScript code in your documentation:
 
 .. code-block:: typescript
    :caption: Showcase: TypeScript interfaces and generics
@@ -950,6 +1016,8 @@ Showing TypeScript Code
 Showing JSON Code
 -----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: JSON configuration
 
@@ -971,6 +1039,8 @@ Showing JSON Code
           ]
       }
 
+to show JSON code in your documentation:
+
 .. code-block:: json
    :caption: Showcase: JSON configuration
 
@@ -991,6 +1061,8 @@ Showing JSON Code
 
 Showing YAML Code
 -----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: YAML configuration
@@ -1016,6 +1088,8 @@ Showing YAML Code
             title_background_color: "#2E3436"
             title_font_color: "#8AE234"
 
+to show YAML code in your documentation:
+
 .. code-block:: yaml
    :caption: Showcase: YAML configuration
 
@@ -1039,6 +1113,8 @@ Showing YAML Code
 
 Showing SQL Code
 ----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: SQL query with joins
@@ -1064,6 +1140,8 @@ Showing SQL Code
       ORDER BY color_count DESC
       LIMIT 10;
 
+to show SQL code in your documentation:
+
 .. code-block:: sql
    :caption: Showcase: SQL query with joins
 
@@ -1088,6 +1166,8 @@ Showing SQL Code
 Showing XML Code
 ----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: XML document structure
 
@@ -1108,6 +1188,8 @@ Showing XML Code
           </fonts>
       </theme>
 
+to show XML code in your documentation:
+
 .. code-block:: xml
    :caption: Showcase: XML document structure
 
@@ -1127,6 +1209,8 @@ Showing XML Code
 
 Showing LaTeX Code
 ------------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: LaTeX tcolorbox definition
@@ -1159,6 +1243,8 @@ Showing LaTeX Code
       \end{ddcodebox}
       \end{document}
 
+to show LaTeX code in your documentation:
+
 .. code-block:: latex
    :caption: Showcase: LaTeX tcolorbox definition
 
@@ -1190,6 +1276,8 @@ Showing LaTeX Code
 Showing Dockerfile Code
 -----------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Multi-stage Dockerfile
 
@@ -1212,6 +1300,8 @@ Showing Dockerfile Code
       COPY conf.py .
 
       ENTRYPOINT ["sphinx-build", "-b", "latex", "source/", "build/"]
+
+to show a Dockerfile in your documentation:
 
 .. code-block:: dockerfile
    :caption: Showcase: Multi-stage Dockerfile
@@ -1236,6 +1326,8 @@ Showing Dockerfile Code
 Showing TOML Code
 -----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Python project configuration
 
@@ -1259,6 +1351,8 @@ Showing TOML Code
       [tool.setuptools.packages.find]
       include = ["docdash_pdf_theme_core*"]
 
+to show a TOML configuration in your documentation:
+
 .. code-block:: toml
    :caption: Showcase: Python project configuration
 
@@ -1281,6 +1375,8 @@ Showing TOML Code
 
 Showing Ruby Code
 -----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: Ruby module with contrast calculation
@@ -1313,6 +1409,8 @@ Showing Ruby Code
         end
       end
 
+to show Ruby code in your documentation:
+
 .. code-block:: ruby
    :caption: Showcase: Ruby module with contrast calculation
 
@@ -1343,6 +1441,8 @@ Showing Ruby Code
 
 Showing PHP Code
 ----------------
+
+Use this reStructuredText markup
 
 .. code-block:: rst
    :caption: Showcase: PHP class with type declarations
@@ -1379,6 +1479,8 @@ Showing PHP Code
           }
       }
 
+to show PHP code in your documentation:
+
 .. code-block:: php
    :caption: Showcase: PHP class with type declarations
 
@@ -1414,6 +1516,8 @@ Showing PHP Code
 Showing Swift Code
 ------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Swift struct with computed property
 
@@ -1443,6 +1547,8 @@ Showing Swift Code
 
       let primary = SemanticColor(name: "primary", hex: "#183060")
       print("\(primary.name) is \(primary.isDark ? "dark" : "light")")
+
+to show Swift code in your documentation:
 
 .. code-block:: swift
    :caption: Showcase: Swift struct with computed property
@@ -1474,6 +1580,8 @@ Showing Swift Code
 Showing Lua Code
 ----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Lua table and metatables
 
@@ -1502,6 +1610,8 @@ Showing Lua Code
       local docdash = Theme.new("DocDash", "#183060")
       local rgb = docdash:hex_to_rgb()
       print(string.format("%s: R=%d G=%d B=%d", docdash.name, rgb.r, rgb.g, rgb.b))
+
+to show Lua code in your documentation:
 
 .. code-block:: lua
    :caption: Showcase: Lua table and metatables
@@ -1532,6 +1642,8 @@ Showing Lua Code
 Showing Makefile Code
 ---------------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: Makefile for Sphinx PDF builds
 
@@ -1558,6 +1670,8 @@ Showing Makefile Code
 
       clean:
       	rm -rf $(BUILD_DIR)
+
+to show a Makefile in your documentation:
 
 .. code-block:: make
    :caption: Showcase: Makefile for Sphinx PDF builds
@@ -1586,6 +1700,8 @@ Showing Makefile Code
 Showing INI Code
 ----------------
 
+Use this reStructuredText markup
+
 .. code-block:: rst
    :caption: Showcase: INI configuration file
 
@@ -1609,6 +1725,8 @@ Showing INI Code
       show_list_of_figures = true
       show_list_of_tables = true
       show_list_of_listings = true
+
+to show an INI configuration file in your documentation:
 
 .. code-block:: ini
    :caption: Showcase: INI configuration file
