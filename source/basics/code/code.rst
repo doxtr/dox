@@ -19,7 +19,7 @@ Showing bash code
 You can use the ``code-block`` directive to show bash code in your documentation. For example, you can show how to install a theme and build the PDF using the following code block:
 
 .. code-block:: rst
-   :caption: Install the doxtr theme and build the PDF
+   :caption: [Source] Install the doxtr theme and build the PDF
    
    .. code-block:: bash
       :caption: Install the doxtr theme and build the PDF
@@ -47,7 +47,7 @@ Showing Plain Text
 You can showcase plain text with this code:
 
 .. code-block:: rst
-   :caption: Showcase: Plain text code block
+   :caption: [Source] Showcase: Plain text code block
 
    .. code-block:: text
       :caption: Showcase: Plain text code block
@@ -67,7 +67,7 @@ Showing Python Code
 Use this reStructuredText markup 
 
 .. code-block:: rst
-   :caption: Showcase: Hello World in Python
+   :caption: [Source] Showcase: Hello World in Python
 
    .. code-block:: python
       :caption: Showcase: Hello World in Python
@@ -89,7 +89,7 @@ Showing Java Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Hello World in Java
+   :caption: [Source] Showcase: Hello World in Java
 
    .. code-block:: java
       :caption: Showcase: Hello World in Java
@@ -117,7 +117,7 @@ Showing Kotlin Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Data class with extension function
+   :caption: [Source] Showcase: Data class with extension function
 
    .. code-block:: kotlin
       :caption: Showcase: Data class with extension function
@@ -161,7 +161,7 @@ Showing Rust Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Struct with Display trait
+   :caption: [Source] Showcase: Struct with Display trait
 
    .. code-block:: rust
       :caption: Showcase: Struct with Display trait
@@ -221,7 +221,7 @@ Showing C Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Struct and pointer usage
+   :caption: [Source] Showcase: Struct and pointer usage
 
    .. code-block:: c
       :caption: Showcase: Struct and pointer usage
@@ -283,7 +283,7 @@ Showing C++ Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Template class
+   :caption: [Source] Showcase: Template class
 
    .. code-block:: cpp
       :caption: Showcase: Template class
@@ -341,7 +341,7 @@ Showing C# Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Record and pattern matching
+   :caption: [Source] Showcase: Record and pattern matching
 
    .. code-block:: csharp
       :caption: Showcase: Record and pattern matching
@@ -399,7 +399,7 @@ Showing Go Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Structs and interfaces
+   :caption: [Source] Showcase: Structs and interfaces
 
    .. code-block:: go
       :caption: Showcase: Structs and interfaces
@@ -477,7 +477,7 @@ Showing reStructuredText Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: reStructuredText markup
+   :caption: [Source] Showcase: reStructuredText markup
 
    .. code-block:: rst
       :caption: Showcase: reStructuredText markup
@@ -531,7 +531,7 @@ Showing Shell Script (sh) Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: POSIX shell script
+   :caption: [Source] Showcase: POSIX shell script
 
    .. code-block:: sh
       :caption: Showcase: POSIX shell script
@@ -571,7 +571,7 @@ Showing Zsh Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Zsh associative arrays and globbing
+   :caption: [Source] Showcase: Zsh associative arrays and globbing
 
    .. code-block:: zsh
       :caption: Showcase: Zsh associative arrays and globbing
@@ -623,7 +623,7 @@ Showing PowerShell Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: PowerShell function with CmdletBinding
+   :caption: [Source] Showcase: PowerShell function with CmdletBinding
 
    .. code-block:: powershell
       :caption: Showcase: PowerShell function with CmdletBinding
@@ -693,7 +693,7 @@ Showing Markdown Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Markdown document with features
+   :caption: [Source] Showcase: Markdown document with features
 
    .. code-block:: markdown
       :caption: Showcase: Markdown document with features
@@ -749,7 +749,7 @@ Showing HTML Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Semantic HTML5 structure
+   :caption: [Source] Showcase: Semantic HTML5 structure
 
    .. code-block:: html
       :caption: Showcase: Semantic HTML5 structure
@@ -813,7 +813,7 @@ Showing CSS Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: CSS custom properties and layout
+   :caption: [Source] Showcase: CSS custom properties and layout
 
    .. code-block:: css
       :caption: Showcase: CSS custom properties and layout
@@ -877,7 +877,7 @@ Showing JavaScript Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: ES2022 class with private fields
+   :caption: [Source] Showcase: ES2022 class with private fields
 
    .. code-block:: javascript
       :caption: Showcase: ES2022 class with private fields
@@ -951,7 +951,7 @@ Showing TypeScript Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: TypeScript interfaces and generics
+   :caption: [Source] Showcase: TypeScript interfaces and generics
 
    .. code-block:: typescript
       :caption: Showcase: TypeScript interfaces and generics
@@ -1019,7 +1019,7 @@ Showing JSON Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: JSON configuration
+   :caption: [Source] Showcase: JSON configuration
 
    .. code-block:: json
       :caption: Showcase: JSON configuration
@@ -1065,7 +1065,7 @@ Showing YAML Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: YAML configuration
+   :caption: [Source] Showcase: YAML configuration
 
    .. code-block:: yaml
       :caption: Showcase: YAML configuration
@@ -1117,7 +1117,7 @@ Showing SQL Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: SQL query with joins
+   :caption: [Source] Showcase: SQL query with joins
 
    .. code-block:: sql
       :caption: Showcase: SQL query with joins
@@ -1169,7 +1169,7 @@ Showing XML Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: XML document structure
+   :caption: [Source] Showcase: XML document structure
 
    .. code-block:: xml
       :caption: Showcase: XML document structure
@@ -1213,7 +1213,7 @@ Showing LaTeX Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: LaTeX tcolorbox definition
+   :caption: [Source] Showcase: LaTeX tcolorbox definition
 
    .. code-block:: latex
       :caption: Showcase: LaTeX tcolorbox definition
@@ -1279,7 +1279,7 @@ Showing Dockerfile Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Multi-stage Dockerfile
+   :caption: [Source] Showcase: Multi-stage Dockerfile
 
    .. code-block:: dockerfile
       :caption: Showcase: Multi-stage Dockerfile
@@ -1329,7 +1329,7 @@ Showing TOML Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Python project configuration
+   :caption: [Source] Showcase: Python project configuration
 
    .. code-block:: toml
       :caption: Showcase: Python project configuration
@@ -1379,7 +1379,7 @@ Showing Ruby Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Ruby module with contrast calculation
+   :caption: [Source] Showcase: Ruby module with contrast calculation
 
    .. code-block:: ruby
       :caption: Showcase: Ruby module with contrast calculation
@@ -1445,7 +1445,7 @@ Showing PHP Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: PHP class with type declarations
+   :caption: [Source] Showcase: PHP class with type declarations
 
    .. code-block:: php
       :caption: Showcase: PHP class with type declarations
@@ -1519,7 +1519,7 @@ Showing Swift Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Swift struct with computed property
+   :caption: [Source] Showcase: Swift struct with computed property
 
    .. code-block:: swift
       :caption: Showcase: Swift struct with computed property
@@ -1583,7 +1583,7 @@ Showing Lua Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Lua table and metatables
+   :caption: [Source] Showcase: Lua table and metatables
 
    .. code-block:: lua
       :caption: Showcase: Lua table and metatables
@@ -1645,7 +1645,7 @@ Showing Makefile Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: Makefile for Sphinx PDF builds
+   :caption: [Source] Showcase: Makefile for Sphinx PDF builds
 
    .. code-block:: make
       :caption: Showcase: Makefile for Sphinx PDF builds
@@ -1703,7 +1703,7 @@ Showing INI Code
 Use this reStructuredText markup
 
 .. code-block:: rst
-   :caption: Showcase: INI configuration file
+   :caption: [Source] Showcase: INI configuration file
 
    .. code-block:: ini
       :caption: Showcase: INI configuration file

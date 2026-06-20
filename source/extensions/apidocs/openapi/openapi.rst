@@ -26,6 +26,10 @@ Tic Tac Toe API
 
 We're going to look at the following JSON file as an example:
 
+.. literalinclude:: tictactoe.json
+   :name: tictactoe.json
+   :caption: OpenAPI specification for a Tic Tac Toe API
+
 .. openapi:: tictactoe.json
 
 Visualizing the API
