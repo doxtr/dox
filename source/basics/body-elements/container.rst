@@ -143,3 +143,7 @@ You can create a participant B container by adding the container class option ``
 .. container:: participant-b
 
    This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+
+.. container:: speech-bubble
+
+   This is the content of the speech bubble container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
