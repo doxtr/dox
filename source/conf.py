@@ -60,6 +60,20 @@ xlink_allowed_tags = {
    'diagramming': ('Diagramming', 'These are links to diagramming documentation.'),
 }
 
+# Dynamic Tag Patterns (regex-based validation)
+# For identifier-style tags that follow a pattern but vary in their specific value.
+# Uses re.fullmatch() — patterns must match the entire tag string.
+# Format: r'regex-pattern': ('Category Name', 'Description')
+xlink_allowed_tag_patterns = {
+    r'dr:\d{4}': ('Decision Record', 'Decision record identifiers.'),
+    r'bib:[a-z]+:.*': ('BibTeX', 'BibTeX metadata tags.'),
+}
+
+# Configure the bibliography file to generate from xlink entries
+# In this example the bib entries are saved in a file named 'bib.xlink',
+# but the annotations can be added to any xlink entry in any file.
+xlink_generate_bib = 'references.bib'
+
 # -- Latex elements configuration
 latex_toplevel_sectioning = "part"
 
