@@ -1,6 +1,6 @@
 {
 "name": "Doxamples",
-"image": "docker.io/doxtr/reactor:0.0.3",
+"image": "docker.io/doxtr/reactor:0.0.4",
 "forwardPorts": [
     8018
 ],

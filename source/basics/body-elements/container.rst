@@ -23,10 +23,12 @@ This is a rubric, which is a sectioning element that is used to group together r
 
 .. rubric:: This is a rubric
 
+And as the rubric is not a sectioning level, it does not have a title or a heading. It is simply a way to group together related sections of content. You can use the rubric to create a visual separation between different sections of your documentation, or to provide additional context or information about the content that follows.
+
 Topic
 -----
 
-This is a topic, which is a block of content that is related to a specific topic. It is typically rendered with a different background color or border to make it stand out from the rest of the text.
+Topics are used to isolate a specific chunk of information that is related to the main content but stands on its own. It behaves like a mini-sidebar or a standalone section.
 
 .. code-block:: rst
    :caption: Topic Example
@@ -108,39 +110,39 @@ You can create a highlight section container by adding the container class optio
 
    This is the content of the highlight section container. It will be rendered with a different background color or border to make it stand out from the rest of the text, which can be useful for drawing attention to important information or for providing additional context to the reader.
 
-Participant A Container
-^^^^^^^^^^^^^^^^^^^^^^^
+Alice Container
+^^^^^^^^^^^^^^^
 
 You can also create a participant A container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-You can create a participant A container by adding the container class option ``participant-a``, like this:
+You can create a participant A container by adding the container class option ``alice``, like this:
 
 .. code-block:: rst
    :caption: Participant A Container Example
 
-   .. container:: participant-a
+   .. container:: alice
 
       This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-.. container:: participant-a
+.. container:: alice
 
    This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-Participant B Container
-^^^^^^^^^^^^^^^^^^^^^^^
+Bob Container
+^^^^^^^^^^^^^
 
 You can also create a participant B container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-You can create a participant B container by adding the container class option ``participant-b``, like this:
+You can create a participant B container by adding the container class option ``bob``, like this:
 
 .. code-block:: rst
    :caption: Participant B Container Example
 
-   .. container:: participant-b
+   .. container:: bob
 
       This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-.. container:: participant-b
+.. container:: bob
 
    This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
