@@ -110,42 +110,49 @@ You can create a highlight section container by adding the container class optio
 
    This is the content of the highlight section container. It will be rendered with a different background color or border to make it stand out from the rest of the text, which can be useful for drawing attention to important information or for providing additional context to the reader.
 
+Participants Containers
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The following containers are examples, of how you can use the container customization to create a conversation between two participants. You can use the ``alice`` and ``bob`` classes to create containers that represent the content of each participant in the conversation.  
+
 Alice Container
-^^^^^^^^^^^^^^^
+"""""""""""""""
 
-You can also create a participant A container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
-
-You can create a participant A container by adding the container class option ``alice``, like this:
+You can create an alice container by adding the container class option ``alice``, like this:
 
 .. code-block:: rst
-   :caption: Participant A Container Example
+   :caption: Alice Container Example
 
    .. container:: alice
 
-      This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+      This is the content of the alice container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
 .. container:: alice
 
-   This is the content of the participant A container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+   This is the content of the alice container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
 Bob Container
-^^^^^^^^^^^^^
+"""""""""""""
 
-You can also create a participant B container, which is a special type of container that is used to indicate that the content is from a specific participant in a conversation or discussion. This can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
-
-You can create a participant B container by adding the container class option ``bob``, like this:
+You can create a bob container by adding the container class option ``bob``, like this:
 
 .. code-block:: rst
-   :caption: Participant B Container Example
+   :caption: Bob Container Example
 
    .. container:: bob
 
-      This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+      This is the content of the bob container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
 .. container:: bob
 
-   This is the content of the participant B container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+   This is the content of the bob container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
 
-.. container:: speech-bubble
+Folder Container
+^^^^^^^^^^^^^^^^
 
-   This is the content of the speech bubble container. It will be rendered with a different background color or border to indicate that the content is from a specific participant in a conversation or discussion, which can be useful for providing context to the reader and for distinguishing between different speakers or contributors.
+Here is an example of a folder container, which is a special type of container that is used to group content together in a way that resembles a folder. This can be useful for organizing related content and providing a visual representation of the structure of your documentation.
+
+.. container:: folder
+
+   This is the content of the folder container. It can be used to group related content together and provide a visual representation of the structure of your documentation.
+
