@@ -16,7 +16,7 @@ Inline Code
    You can use backticks (\`\`) to indicate inline code. For example, ````this text is code```` will be rendered as ``this text is code``.
 
 Literal Blocks
-   You can use double colons (::) followed by an indented block of text to indicate a literal block, which is typically rendered in a monospaced font.
+   You can use double colons (``::``) followed by an indented block of text to indicate a literal block, which is typically rendered in a monospaced font.
 
    .. code-block::
 
