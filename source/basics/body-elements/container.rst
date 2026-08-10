@@ -152,6 +152,15 @@ Folder Container
 
 Here is an example of a folder container, which is a special type of container that is used to group content together in a way that resembles a folder. This can be useful for organizing related content and providing a visual representation of the structure of your documentation.
 
+.. code-block:: rst
+   :caption: Folder Container Example
+
+   .. container:: folder
+
+      This is the content of the folder container. It can be used to group related content together and provide a visual representation of the structure of your documentation.
+
+Will render as:
+
 .. container:: folder
 
    This is the content of the folder container. It can be used to group related content together and provide a visual representation of the structure of your documentation.
