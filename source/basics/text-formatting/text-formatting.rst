@@ -22,8 +22,8 @@ Literal Blocks
 
       For example::
 
-      This is a literal block of text.
-      It is typically rendered in a monospaced font.
+         This is a literal block of text.
+         It is typically rendered in a monospaced font.
 
    Will be rendered as:
 
