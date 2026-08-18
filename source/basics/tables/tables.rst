@@ -7,7 +7,7 @@ Tables
 Sphinx provides a powerful way to create tables in your documentation. You can use the ``table`` directive to create tables with various formatting options. Here are some examples of how to create tables in Sphinx.
 
 Simple Table
-------------
+============
 
 .. code-block:: rst
 
@@ -38,7 +38,7 @@ Simple tables are limited: they must contain more than one row, and the first co
    =====  =====  =======
 
 Grid Table
-----------
+==========
 
 .. code-block:: rst
 
@@ -65,12 +65,12 @@ This will create a grid table with two columns and three rows. The first row is 
    +--------------+--------------+
 
 CSV Table
----------
+=========
 
 You can create tables from CSV data using the ``csv-table`` directive. This allows you to easily create tables from data that is already in CSV format. You can work with ``internal CSV data``, which is baked directly into the document or use ``external CSV files``, where the CSV data is stored in a separate file (which is usually the preferred approach).
 
 Internal CSV Data
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Here's an example of how to create a table from internal CSV data:
 
@@ -97,7 +97,7 @@ This will create a table from CSV data. The ``csv-table`` directive allows you t
    "Gannet Ripple", 1.99, "On a stick!"
 
 External CSV Files
-^^^^^^^^^^^^^^^^^^
+------------------
 
 You can also create tables from external CSV files. Here's an example of how to do that if the header row is included in the CSV file:
 
@@ -168,3 +168,23 @@ This will create the following table from the data in the list:
    * - Gannet Ripple
      - 1.99
      - On a stick!
+
+Long Table
+==========
+
+This is an example of a long table that spans multiple pages. The ``longtable`` directive is used to create long tables in Sphinx. The syntax for creating a long table is similar to that of a simple table, but with the addition of the ``:longtable:`` option.
+
+.. csv-table:: Frozen Delights!
+   :header-rows: 1
+   :file: table-data/long-table-data.csv
+   :longtable:
+
+Long and Wide Table
+===================
+
+This is an example of a long and wide table that spans multiple pages. The ``longtable`` directive is used to create long tables in Sphinx. The syntax for creating a long table is similar to that of a simple table, but with the addition of the ``:longtable:`` option.
+
+.. csv-table:: Frozen Delights!
+   :header-rows: 1
+   :file: table-data/long-wide-table-data.csv
+   :longtable:
