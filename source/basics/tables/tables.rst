@@ -172,17 +172,17 @@ This will create the following table from the data in the list:
 Long Table
 ==========
 
-This is an example of a long table that spans multiple pages. The ``longtable`` directive is used to create long tables in Sphinx. The syntax for creating a long table is similar to that of a simple table, but with the addition of the ``:longtable:`` option.
+This is an example of a long table that spans multiple pages.
 
-.. csv-table:: Frozen Delights!
+.. csv-table:: Personal Information
    :header-rows: 1
    :file: table-data/long-table-data.csv
 
 Long and Wide Table
 ===================
 
-This is an example of a long and wide table that spans multiple pages. The ``longtable`` directive is used to create long tables in Sphinx. The syntax for creating a long table is similar to that of a simple table, but with the addition of the ``:longtable:`` option.
+This is an example of a long and wide table that spans multiple pages.
 
-.. csv-table:: Frozen Delights!
+.. csv-table:: Personal Information with Details
    :header-rows: 1
    :file: table-data/long-wide-table-data.csv
