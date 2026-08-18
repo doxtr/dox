@@ -177,7 +177,6 @@ This is an example of a long table that spans multiple pages. The ``longtable`` 
 .. csv-table:: Frozen Delights!
    :header-rows: 1
    :file: table-data/long-table-data.csv
-   :longtable:
 
 Long and Wide Table
 ===================
@@ -187,4 +186,3 @@ This is an example of a long and wide table that spans multiple pages. The ``lon
 .. csv-table:: Frozen Delights!
    :header-rows: 1
    :file: table-data/long-wide-table-data.csv
-   :longtable:
