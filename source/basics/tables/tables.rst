@@ -169,8 +169,25 @@ This will create the following table from the data in the list:
      - 1.99
      - On a stick!
 
+Table Edge Cases
+================
+
+With these tests we want to make sure that the table directive works in all edge cases. The following tests are included:
+
+* Table following a section title
+* Long table that spans multiple pages
+* Long and wide table that spans multiple pages
+
+Table Following a Section Title
+-------------------------------
+
+.. csv-table:: Frozen Delights!
+   :header-rows: 1
+   :widths: 15, 10, 30
+   :file: table-data/frozen_delights.csv
+
 Long Table
-==========
+----------
 
 This is an example of a long table that spans multiple pages.
 
@@ -179,10 +196,11 @@ This is an example of a long table that spans multiple pages.
    :file: table-data/long-table-data.csv
 
 Long and Wide Table
-===================
+-------------------
 
 This is an example of a long and wide table that spans multiple pages.
 
 .. csv-table:: Personal Information with Details
    :header-rows: 1
    :file: table-data/long-wide-table-data.csv
+
