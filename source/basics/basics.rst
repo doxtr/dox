@@ -25,4 +25,5 @@ In this document, **this** ``.rst`` file represents the 'Part' level of the docu
    admonitions/admonitions
    body-elements/body-elements
    images/images
+   todo/todo
    code/code
