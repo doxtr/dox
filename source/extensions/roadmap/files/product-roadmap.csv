@@ -1,0 +1,15 @@
+section,name,start,end,row_group,link,tags
+Periods,Q1-2027,2027-01-01,2027-03-31,,,
+Periods,Q2-2027,2027-04-01,2027-06-30,,,
+Periods,Q3-2027,2027-07-01,2027-09-30,,,
+Platform,Backend Overhaul,2027-01-15,2027-04-30,,,eng
+Backend Overhaul,Database Migration,2027-01-15,2027-02-28,,,eng
+Backend Overhaul,API Redesign,2027-03-01,2027-04-30,,:xlink:`plantuml-home`,eng code
+Platform,Release v2.0,2027-04-30,2027-04-30,,,eng
+Frontend,Design System,2027-02-01,2027-05-31,,,code
+Frontend,Component Library,2027-03-01,2027-04-30,grp1,,code
+Frontend,Accessibility Audit,2027-03-01,2027-04-30,grp1,,security
+Frontend,New Dashboard,2027-04-01,2027-06-30,,,code
+Security,Penetration Test,2027-03-01,2027-03-31,,,security
+Security,Compliance Review,2027-04-15,2027-05-15,,:xlink:`sphinx-home`,security
+Security,Audit Complete,2027-05-15,2027-05-15,,,security
