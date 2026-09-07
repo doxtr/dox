@@ -8,6 +8,7 @@ This Part contains examples of how to use the different extensions that are incl
    :maxdepth: 5
 
    xlink/xlink
+   roadmap/roadmap
    pdf-theming/pdf-theming
    diagrams/diagrams
    needs/needs
