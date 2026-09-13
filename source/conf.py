@@ -10,8 +10,8 @@ project = 'Doxamples'
 copyright = '2026, Doxtr Doc'
 author = 'Doxtr Doc'
 
-version = '0.0.1'
-release = '0.0.1'
+version = '0.0.2'
+release = '0.0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -28,6 +28,8 @@ extensions = [
     'sphinxcontrib.icon',
     'metapensiero.sphinx.d2',
     'sphinxcontrib.xlink',
+    'doxtr_pdf_theme_core',
+    'doxtr_roadmap',
     'sphinx_needs',
 ]
 
