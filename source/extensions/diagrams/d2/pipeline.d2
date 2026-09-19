@@ -1,0 +1,16 @@
+direction: right
+start: Start
+process: Process
+finish: Done
+
+start -> process -> finish
+
+layers: {
+  detail: {
+    direction: right
+    process: Process
+    validate: Validate
+    store: Store
+    process -> validate -> store
+  }
+}

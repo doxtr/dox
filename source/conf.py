@@ -26,7 +26,7 @@ extensions = [
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.openapi',
     'sphinxcontrib.icon',
-    'metapensiero.sphinx.d2',
+    'doxtr_d2',
     'sphinxcontrib.xlink',
     'doxtr_pdf_theme_core',
     'doxtr_roadmap',

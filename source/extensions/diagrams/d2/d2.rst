@@ -1,15 +1,695 @@
-.. index:: D2
+.. index:: doxtr_d2, D2; Themed, Diagrams; D2 (themed)
 
-D2: Declarative Diagramming
-===========================
+.. _doxtr-d2-chapter:
 
-Needs
+doxtr_d2: Themed D2 Diagrams
+============================
 
-.. code-block:: sh
+``doxtr_d2`` renders `d2 <https://d2lang.com/>`__ diagrams through the external
+``d2`` binary and adds first-class ``doxtr-pdf-theme-core``-aware light/dark PDF
+output. It provides a single ``.. d2::`` directive that accepts either an inline
+d2 script or a ``.d2`` file argument, plus a family of ``d2_*`` configuration
+values that set project-wide defaults.
 
-   pip install metapensiero.sphinx.d2
-   # Maybe install d2 binary
-   curl -fsSL https://d2lang.com/install.sh | sh -s --
+The extension works **standalone** — the theme-core dependency is soft. When the
+core is importable the dark-palette integration lights up automatically so
+diagrams pick up the same colours the theme computed for the page.
 
-.. d2:: example.d2
-   :caption: Hello
+This chapter is example-driven: every directive option and every important
+configuration value is shown with a small, self-contained, rendered diagram so
+you can *see* the effect rather than only read about it.
+
+Enabling the extension
+-----------------------
+
+Add ``doxtr_d2`` to the extensions list in your :file:`conf.py` and make sure
+the ``d2`` binary is on ``PATH`` (or point ``d2_binary`` at it):
+
+.. code-block:: python
+   :caption: conf.py
+
+   extensions = [
+       # ...
+       "doxtr_d2",
+   ]
+
+Requirements:
+
+- Python ≥ 3.8, Sphinx ≥ 5.0.
+- The external ``d2`` binary (verified against **d2 v0.9.0**).
+- For PDF output: **LuaLaTeX** (the theme core forces ``lualatex``).
+- Optional: ``doxtr-pdf-theme-core`` for dark-palette PDF integration, and
+  ``sphinxcontrib-xlink`` for ``:xlink:`` links inside diagrams.
+
+Basic usage
+-----------
+
+Inline diagram
+~~~~~~~~~~~~~~
+
+An inline d2 script is rendered directly from the directive content:
+
+.. d2::
+
+   client -> server: request
+   server -> client: response
+
+File-argument diagram
+~~~~~~~~~~~~~~~~~~~~~~
+
+A ``.d2`` file argument is resolved relative to the current document and
+registered as a rebuild dependency. The file argument and inline content are
+**mutually exclusive** — supplying both (or neither) warns and skips the
+diagram.
+
+.. d2:: architecture.d2
+   :caption: A request/response flow rendered from ``architecture.d2``
+   :width: 80%
+
+Directive options
+------------------
+
+Every option below maps to a ``d2_<option>`` configuration default; the
+per-directive value always wins over the config default.
+
+Alignment (``:align:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The same tiny diagram aligned ``left``, ``center`` and ``right``:
+
+.. d2::
+   :align: left
+   :width: 30%
+
+   a -> b: left
+
+.. d2::
+   :align: center
+   :width: 30%
+
+   a -> b: center
+
+.. d2::
+   :align: right
+   :width: 30%
+
+   a -> b: right
+
+Caption and width (``:caption:``, ``:width:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A ``:caption:`` wraps the diagram in a figure (caption text accepts inline
+roles and cross-references). ``:width:`` accepts a length, a percentage, or a
+unitless value and is translated to a LaTeX length for PDF output. The same
+figure at 40% and 80%:
+
+.. d2::
+   :caption: Narrow — ``:width: 40%``
+   :width: 40%
+
+   ingest -> transform -> load
+
+.. d2::
+   :caption: Wide — ``:width: 80%``
+   :width: 80%
+
+   ingest -> transform -> load
+
+Theme (``:theme:``, ``:dark_theme:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``:theme:`` selects the base light theme id; ``:dark_theme:`` overrides the
+dark fallback (``d2_dark_theme``, default ``200``) for this diagram. The same
+graph at two theme ids so the colour difference is visible:
+
+.. d2::
+   :theme: 0
+   :caption: ``:theme: 0`` (Neutral default)
+   :width: 45%
+
+   a -> b -> c
+
+.. d2::
+   :theme: 4
+   :caption: ``:theme: 4`` (Grape soda)
+   :width: 45%
+
+   a -> b -> c
+
+Sketch (``:sketch:``)
+~~~~~~~~~~~~~~~~~~~~~
+
+``:sketch:`` gives a hand-drawn look. The same diagram, clean vs sketched:
+
+.. d2::
+   :caption: Clean (default)
+   :width: 45%
+
+   design -> build -> ship
+
+.. d2::
+   :sketch:
+   :caption: ``:sketch:`` — hand-drawn
+   :width: 45%
+
+   design -> build -> ship
+
+Padding (``:pad:``)
+~~~~~~~~~~~~~~~~~~~
+
+``:pad:`` sets the px padding around the drawing. The same diagram at ``20``
+vs ``200`` px:
+
+.. d2::
+   :pad: 20
+   :caption: ``:pad: 20``
+   :width: 45%
+
+   a -> b
+
+.. d2::
+   :pad: 200
+   :caption: ``:pad: 200``
+   :width: 45%
+
+   a -> b
+
+Centering (``:center:``)
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+``:center:`` centres the drawing within its viewbox — useful together with a
+fixed ``:width:``:
+
+.. d2::
+   :center:
+   :caption: ``:center:`` inside the viewbox
+   :width: 60%
+
+   solo
+
+Scale (``:scale:``)
+~~~~~~~~~~~~~~~~~~~
+
+``:scale:`` is a render scale, only applied when ``> 0``. The same diagram at
+half and one-and-a-half scale (shown at a fixed display width so the intrinsic
+render difference is what changes):
+
+.. d2::
+   :scale: 0.5
+   :caption: ``:scale: 0.5``
+   :width: 45%
+
+   x -> y -> z
+
+.. d2::
+   :scale: 1.5
+   :caption: ``:scale: 1.5``
+   :width: 45%
+
+   x -> y -> z
+
+Layout engine (``:layout:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+d2 ships two free engines, ``dagre`` (default) and ``elk``. The same graph
+routed with each so the difference in routing is visible:
+
+.. d2::
+   :layout: dagre
+   :caption: ``:layout: dagre``
+   :width: 45%
+
+   a -> b
+   a -> c
+   b -> d
+   c -> d
+   d -> e
+
+.. d2::
+   :layout: elk
+   :caption: ``:layout: elk``
+   :width: 45%
+
+   a -> b
+   a -> c
+   b -> d
+   c -> d
+   d -> e
+
+A licensed engine such as ``tala`` must be whitelisted by name in
+``d2_extra_layouts`` (see :ref:`doxtr-d2-config`); an engine outside
+``{dagre, elk} ∪ d2_extra_layouts`` warns and falls back to the default (or
+raises under ``d2_strict``).
+
+Output format (``:format:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The output format is resolved *per builder*: HTML-family builders and EPUB
+default to ``svg``, LaTeX to ``pdf``, Confluence to ``png`` (see
+:ref:`doxtr-d2-formats`). ``:format:`` overrides the resolved format for a
+single diagram. A per-directive format the active builder cannot embed (e.g.
+``pdf`` on an HTML builder) is validated once the builder is known: the
+extension warns and falls back to a safe embeddable format rather than emitting
+a broken diagram (or raises under ``d2_strict``).
+
+The diagram below explicitly requests ``svg``, which HTML can embed directly:
+
+.. d2::
+   :format: svg
+   :caption: ``:format: svg`` (embeddable on HTML)
+   :width: 45%
+
+   parse -> render
+
+Alt text and CSS class (``:alt:``, ``:class:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``:alt:`` provides alternative text (and the text/man placeholder);
+``:class:`` adds extra CSS/LaTeX classes for styling hooks:
+
+.. d2::
+   :alt: A two-step accessibility example flow
+   :class: d2-example
+   :caption: ``:alt:`` for accessibility, ``:class:`` for styling
+   :width: 50%
+
+   input -> output
+
+Named diagrams and cross-references (``:name:``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``:name:`` registers a cross-reference target. Reference it with ``:ref:``
+elsewhere — see :ref:`doxtr-d2-login-flow` for the diagram defined here:
+
+.. d2::
+   :name: doxtr-d2-login-flow
+   :caption: The referenced login flow
+   :width: 60%
+
+   user -> app: login
+   app -> db: verify
+   db -> app: ok
+   app -> user: token
+
+.. note::
+
+   Internal ``:ref:`` cross-references are an **HTML-only** feature. In PDF the
+   label is kept but the relative-file URI is dropped, because a relative-file
+   URI is meaningless inside a single PDF.
+
+Multi-board diagrams (``:target:``, ``:animate_interval:``)
+-----------------------------------------------------------
+
+d2 compositions (``layers`` / ``scenarios`` / ``steps``) declare multiple
+boards, but the output must always be a **single file**. ``pipeline.d2`` below
+defines a root board plus a ``detail`` layer.
+
+Select a specific board with ``:target:`` (a board selector such as
+``layers.detail``); this always takes precedence:
+
+.. d2:: pipeline.d2
+   :target: layers.detail
+   :caption: ``:target: layers.detail`` selects one board
+   :width: 60%
+
+Without a ``:target:``, an SVG build follows ``d2_multiboard_svg`` (default
+``animate`` → an animated SVG). ``:animate_interval:`` sets the frame interval
+in ms for the animated multi-board SVG/GIF. In HTML/EPUB the diagram below
+renders as an animated multi-board SVG; in a PDF build the ``--animate-interval``
+flag is meaningless for the static ``.pdf`` format, so it is silently dropped and
+the diagram renders as a static multipage PDF (``\includegraphics`` embeds the
+first board):
+
+.. d2:: pipeline.d2
+   :animate_interval: 1200
+   :caption: Animated multi-board SVG in HTML (``:animate_interval: 1200`` ms); static first board in PDF
+   :width: 60%
+
+.. warning::
+
+   ``:animate_interval:`` produces an **animated SVG or GIF** — an HTML/EPUB
+   feature with no direct PDF equivalent. In a PDF build the
+   ``--animate-interval`` flag is dropped (d2 rejects it for static ``.pdf``
+   output), and the diagram renders as a static multipage PDF whose first board
+   is embedded. The build no longer fails on the PDF path. For explicit control
+   over which board a PDF shows, set ``:target:`` to pick a single board (shown
+   above) — that renders cleanly and predictably in every builder.
+
+.. note::
+
+   **Per-format multi-board behaviour.** SVG becomes an animated SVG (or the
+   board chosen by ``d2_multiboard_svg`` / ``:target:``). PDF renders a
+   multipage PDF (one board per page) but ``\includegraphics`` embeds page 1
+   only, so set ``:target:`` to pick a board; without it the extension warns and
+   shows the first board. An animated GIF is the natural single-file multi-board
+   form.
+
+.. _doxtr-d2-config:
+
+Configuration values
+---------------------
+
+Every directive option has a ``d2_<option>`` default. The directive value wins
+over the config default. All ``d2_*`` values trigger an ``env`` rebuild when
+changed.
+
+.. list-table:: ``d2_*`` configuration values
+   :header-rows: 1
+   :widths: 30 20 50
+
+   * - Config value
+     - Default
+     - Description
+   * - ``d2_binary``
+     - ``"d2"``
+     - Binary path (argv[0]; invoked with ``shell=False``).
+   * - ``d2_theme``
+     - ``0``
+     - Base light theme id.
+   * - ``d2_dark_theme``
+     - ``200``
+     - Dark fallback theme id.
+   * - ``d2_layout``
+     - ``"dagre"``
+     - Default layout engine.
+   * - ``d2_extra_layouts``
+     - ``[]``
+     - Whitelist of extra engine names (e.g. ``["tala"]``).
+   * - ``d2_pad``
+     - ``100``
+     - px padding.
+   * - ``d2_sketch``
+     - ``False``
+     - Hand-drawn look.
+   * - ``d2_scale``
+     - ``-1``
+     - ``--scale`` appended only when ``> 0``.
+   * - ``d2_center``
+     - ``False``
+     - Center in the viewbox.
+   * - ``d2_class``
+     - ``""``
+     - Default extra class.
+   * - ``d2_redirect_links_to_blank_page``
+     - ``True``
+     - SVG ``<a>`` ``target="_blank"`` for non-external links.
+   * - ``d2_animate_interval``
+     - ``0``
+     - Multi-board animated SVG/GIF interval (ms).
+   * - ``d2_timeout``
+     - ``120``
+     - ``--timeout=<n>`` and the subprocess timeout (s).
+   * - ``d2_fonts``
+     - ``{}``
+     - ``{role: ttf-path}`` (``regular`` / ``italic`` / ``bold`` / ``mono`` / …).
+   * - ``d2_multiboard_svg``
+     - ``"animate"``
+     - SVG multi-board policy: ``animate`` / ``root`` / ``error``.
+   * - ``d2_builder_formats``
+     - ``{}``
+     - Per-builder format overrides (merged over the defaults).
+   * - ``d2_default_format``
+     - ``"svg"``
+     - Fallback for builders not in the map.
+   * - ``d2_use_theme_core_palette``
+     - ``True``
+     - Build custom theme-overrides from the core palette.
+   * - ``d2_match_page_background``
+     - ``True``
+     - Match the d2 canvas (``N7``) to the resolved page colour.
+   * - ``d2_dark_theme_overrides``
+     - ``{}``
+     - User dict deep-merged over the generated dark block.
+   * - ``d2_dark_html``
+     - ``False``
+     - Opt-in to apply dark theme-overrides in HTML builds.
+   * - ``d2_allowed_link_schemes``
+     - ``None``
+     - ``None`` = all schemes except denylist ``{javascript, data, vbscript}``.
+   * - ``d2_latex_max_width``
+     - ``\linewidth``
+     - Default width cap for the LaTeX visitor.
+   * - ``d2_strict``
+     - ``False``
+     - When ``True``, a d2 failure raises instead of warn+skip.
+
+Config values set project-wide defaults; the examples below pair a
+:file:`conf.py` snippet with a diagram showing the equivalent effect.
+
+Global sketch (``d2_sketch``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+   :caption: conf.py — every diagram hand-drawn by default
+
+   d2_sketch = True
+
+The diagram below sets ``:sketch:`` on the directive to reflect what that global
+default looks like for every diagram:
+
+.. d2::
+   :sketch:
+   :caption: Reflects a global ``d2_sketch = True``
+   :width: 45%
+
+   a -> b -> c
+
+Global theme (``d2_theme``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+   :caption: conf.py — change the project-wide base theme
+
+   d2_theme = 4
+
+The diagram below uses ``:theme: 4`` to preview that global default:
+
+.. d2::
+   :theme: 4
+   :caption: Reflects a global ``d2_theme = 4``
+   :width: 45%
+
+   a -> b -> c
+
+Global padding (``d2_pad``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+   :caption: conf.py — tighter default padding
+
+   d2_pad = 20
+
+.. d2::
+   :pad: 20
+   :caption: Reflects a global ``d2_pad = 20``
+   :width: 45%
+
+   a -> b
+
+Global layout (``d2_layout``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+   :caption: conf.py — make elk the project default
+
+   d2_layout = "elk"
+
+.. d2::
+   :layout: elk
+   :caption: Reflects a global ``d2_layout = "elk"``
+   :width: 45%
+
+   a -> b
+   a -> c
+   b -> d
+   c -> d
+
+Extra layout engines (``d2_extra_layouts``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Whitelist a licensed engine so a typo'd engine name is caught rather than
+silently handed to d2:
+
+.. code-block:: python
+   :caption: conf.py — allow the licensed ``tala`` engine
+
+   d2_extra_layouts = ["tala"]  # then :layout: tala is accepted
+
+.. _doxtr-d2-formats:
+
+Per-builder output formats (``d2_builder_formats``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each builder gets a sensible default; override any of them via
+``d2_builder_formats`` (merged over the defaults):
+
+.. list-table:: Default format per builder
+   :header-rows: 1
+   :widths: 50 50
+
+   * - Builder
+     - Default format
+   * - ``html`` / ``dirhtml`` / ``singlehtml``
+     - ``svg``
+   * - ``epub``
+     - ``svg``
+   * - ``latex``
+     - ``pdf``
+   * - ``confluence`` (experimental)
+     - ``png``
+   * - (any other)
+     - ``d2_default_format`` (``svg``)
+
+.. code-block:: python
+   :caption: conf.py — render raster instead of vector for LaTeX/EPUB
+
+   d2_builder_formats = {"latex": "png", "epub": "png"}
+   d2_default_format = "svg"
+
+.. note::
+
+   HTML-family builders can only embed ``svg`` / ``png``. A ``:format:`` the
+   active builder cannot embed is caught at build time and falls back to a safe
+   format (SVG for HTML, PDF for LaTeX), or raises under ``d2_strict``.
+
+.. _doxtr-d2-darkmode:
+
+Dark mode & theme-core integration
+----------------------------------
+
+d2's ``--dark-theme`` only affects a browser in dark mode; a static PDF needs an
+explicit theme. So for dark PDF/SVG this extension computes a custom d2
+``theme-overrides`` block from the theme-core's resolved dark palette and injects
+it on top of the base ``--theme=<d2_dark_theme>`` (default ``200``). When the
+core is absent or dark mode is inactive it falls back to that base dark theme id.
+
+.. code-block:: python
+   :caption: conf.py — dark-mode / palette controls
+
+   d2_dark_theme = 200            # base dark fallback theme id
+   d2_use_theme_core_palette = True   # derive overrides from the core palette
+   d2_match_page_background = True    # match the d2 canvas (N7) to the page colour
+   d2_dark_theme_overrides = {}       # deep-merged over the generated block
+   d2_dark_html = False               # opt-in to dark overrides in HTML too
+
+Integration is **soft**: the core import is guarded on ``ImportError`` only, so a
+version skew (core present but an expected API missing) surfaces as a warning
+rather than silently degrading to "core absent". At startup the extension logs
+whether palette integration is active.
+
+The diagram below renders in this chapter's light and dark PDFs; in the dark
+build its palette is derived from the theme-core dark colours:
+
+.. d2::
+   :caption: Palette-integrated diagram (light in HTML, dark palette in dark PDF)
+   :width: 60%
+
+   request -> handler -> response
+
+Hand-authored ``_dark`` file swap
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can ship a hand-authored ``graph_dark.d2`` next to ``graph.d2``; in a dark
+**LaTeX** build the core swaps the directive argument to the ``_dark`` file.
+When a swap occurs the auto-generated ``theme-overrides`` are skipped so the
+hand-authored file speaks for itself. The directive references the light file:
+
+.. d2:: graph.d2
+   :caption: ``graph.d2`` in light builds; ``graph_dark.d2`` swapped in dark LaTeX
+   :width: 60%
+
+.. note::
+
+   The ``_dark`` swap is **LaTeX-gated** — it applies in dark PDF builds, not in
+   HTML. Internal ``:ref:`` links are HTML-only, while external and
+   custom-scheme links survive into the PDF.
+
+.. _doxtr-d2-links:
+
+Links in diagrams
+-----------------
+
+A d2 ``link:`` field may carry Sphinx cross-references and arbitrary URLs. Three
+kinds are supported.
+
+Internal cross-references resolve to a builder-correct relative URI in HTML
+(dropped in PDF, keeping the label). A ``link:`` carrying a role must be on its
+**own line**:
+
+.. d2::
+   :caption: An internal ``:ref:`` link (HTML-only)
+   :width: 50%
+
+   docs: Documentation {
+     link: :ref:`roadmap-links`
+   }
+   docs -> home: back to top
+
+.. warning::
+
+   **Own-line constraint.** ``x: { link: :ref:`t` }`` on a single line is **not**
+   rewritten. Put the ``link:`` field on its own line inside the node block.
+
+Raw and custom-scheme URLs pass through scheme-agnostically (``https:``,
+``mailto:``, ``obsidian://``, etc.) and become clickable ``/URI`` annotations in
+the PDF too:
+
+.. d2::
+   :caption: Raw external URLs survive into the PDF
+   :width: 50%
+
+   site: Homepage {
+     link: https://d2lang.com
+   }
+   contact: Contact {
+     link: mailto:docs@example.com
+   }
+
+If ``sphinxcontrib-xlink`` is installed, ``link: :xlink:`link-id``` resolves to
+an external URL via the ``xlink`` config map; it degrades gracefully (warn +
+drop) when xlink is not installed.
+
+.. note::
+
+   **Security.** ``javascript:`` / ``data:`` / ``vbscript:`` URIs are an XSS
+   vector in SVG output and are **stripped with a warning by default**. Configure
+   ``d2_allowed_link_schemes`` to change the policy — e.g.
+   ``["https", "mailto"]`` for an allowlist, or include ``"data"`` to opt back
+   in. By default SVG links also get ``target="_blank"`` (see
+   ``d2_redirect_links_to_blank_page``).
+
+LaTeX / PDF notes
+-----------------
+
+- PDF output requires **LuaLaTeX** (graphicx/luatex embed PDF natively — no
+  ``epstopdf`` needed).
+- A raw d2 PDF (~203 mm) overflows the text block, so the LaTeX visitor always
+  emits ``width=\linewidth,height=0.9\textheight,keepaspectratio``. The width
+  cap comes from ``d2_latex_max_width``; a ``:width:`` value (including ``%``) is
+  translated to a LaTeX length.
+- d2 PDFs embed real clickable ``/URI`` link annotations, so external and
+  custom-scheme links survive into the PDF. Internal ``:ref:`` cross-references
+  are HTML-only.
+
+Replacing the renderer
+----------------------
+
+Everything that shells out to ``d2`` lives behind a single indirection,
+``doxtr_d2.render.render_backend`` (defaulting to ``doxtr_d2.render.render_d2``).
+A child theme can replace **all** rendering by reassigning that one value:
+
+.. code-block:: python
+
+   import doxtr_d2.render as render
+
+   def my_render_backend(stdin_bytes, fmt, resolved_options, image_dir, **kwargs):
+       # e.g. call a d2 HTTP service or a different diagram tool.
+       # Contract: write the artifact under image_dir and return its filename
+       # RELATIVE to image_dir; raise doxtr_d2.errors.D2Error on failure.
+       ...
+       return "d2-<hash>.%s" % fmt
+
+   render.render_backend = my_render_backend
+
+Keep the signature and return/raise contract identical to ``render_d2`` and the
+visitors, caching key, and atomic-write guarantees continue to work unchanged.

@@ -1,0 +1,13 @@
+direction: right
+
+client: Client
+gateway: API Gateway
+service: Service
+store: Data Store
+
+client -> gateway: request
+gateway -> service: dispatch
+service -> store: persist
+store -> service: ack
+service -> gateway: result
+gateway -> client: response
