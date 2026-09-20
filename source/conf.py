@@ -28,7 +28,6 @@ extensions = [
     'sphinxcontrib.icon',
     'doxtr_d2',
     'sphinxcontrib.xlink',
-    'doxtr_pdf_theme_core',
     'doxtr_roadmap',
     'sphinx_needs',
 ]
@@ -37,6 +36,8 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 language = 'en'
+
+numfig = True  # Enable numbered figures
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
