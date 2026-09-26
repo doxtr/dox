@@ -137,9 +137,16 @@ drawio_headless = True
 drawio_no_sandbox = True
 drawio_builder_export_format = {
      "html": "svg",
-     "latexpdf": "png",
+     "latexpdf": "pdf",
      "docx": "png"
 }
 drawio_default_export_scale = 100
 drawio_default_transparency = True
 # --- END Draw.io CONFIGURATION ---
+
+#######################################
+#     doxtr-roadmap configuration     #
+#######################################
+
+doxtr_roadmap_figure = True
+# --- END doxtr-roadmap CONFIGURATION ---
