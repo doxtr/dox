@@ -13,7 +13,9 @@ Reactor,v0.1.1,2026-09-06,2026-09-06,,,doxtr-reactor
 Reactor,v0.1.2,2026-09-13,2026-09-13,,,doxtr-reactor
 Reactor,v0.1.3,2026-09-14,2026-09-14,,,doxtr-reactor
 Reactor,v0.1.4,2026-09-15,2026-09-15,,,doxtr-reactor
-Reactor,v0.1.5,2026-09-19,2026-09-19,,,doxtr-reactor current
+Reactor,v0.1.5,2026-09-19,2026-09-19,,,doxtr-reactor
+Reactor,v0.1.6,2026-09-21,2026-09-21,,,doxtr-reactor
+Reactor,v0.1.7,2026-09-27,2026-09-27,,,doxtr-reactor current
 
 Containers,Reactor-Builder-Assets,2026-05-30,@now() + 1 months,,,doxtr-reactor-builder-assets repo
 Reactor-Builder-Assets,Initial Release,2026-05-30,2026-05-30,,,doxtr-reactor-builder-assets initial
@@ -28,7 +30,9 @@ Reactor-Builder-Assets,v0.0.10,2026-09-06,2026-09-06,,,doxtr-reactor-builder-ass
 Reactor-Builder-Assets,v0.0.11,2026-09-13,2026-09-13,,,doxtr-reactor-builder-assets
 Reactor-Builder-Assets,v0.0.12,2026-09-14,2026-09-14,,,doxtr-reactor-builder-assets
 Reactor-Builder-Assets,v0.0.13,2026-09-15,2026-09-15,,,doxtr-reactor-builder-assets
-Reactor-Builder-Assets,v0.0.14,2026-09-19,2026-09-19,,,doxtr-reactor-builder-assets current
+Reactor-Builder-Assets,v0.0.14,2026-09-19,2026-09-19,,,doxtr-reactor-builder-assets
+Reactor-Builder-Assets,v0.0.15,2026-09-21,2026-09-21,,,doxtr-reactor-builder-assets
+Reactor-Builder-Assets,v0.0.16,2026-09-27,2026-09-27,,,doxtr-reactor-builder-assets current
 
 Containers,Reactor-Builder-Fonts,2026-09-06,@now() + 1 months,,,doxtr-reactor-builder-fonts repo
 Reactor-Builder-Fonts,Initial Release,2026-09-06,2026-09-06,,,doxtr-reactor-builder-fonts initial current
@@ -56,13 +60,17 @@ Sphinx-Extensions,doxtr-roadmap,2026-09-06,@now() + 1 months,,,doxtr-roadmap rep
 doxtr-roadmap,Initial Release,2026-09-06,2026-09-06,,,doxtr-roadmap initial
 doxtr-roadmap,v0.1.1,2026-09-13,2026-09-13,,,doxtr-roadmap
 doxtr-roadmap,v0.1.2,2026-09-14,2026-09-14,,,doxtr-roadmap
-doxtr-roadmap,v0.1.3,2026-09-20,2026-09-20,,,doxtr-roadmap current
+doxtr-roadmap,v0.1.3,2026-09-20,2026-09-20,,,doxtr-roadmap
+doxtr-roadmap,v0.1.4,2026-09-26,2026-09-26,,,doxtr-roadmap current
 
 Sphinx-Extensions,doxtr-d2,2026-09-15,@now() + 1 months,,,doxtr-d2 repo
 doxtr-d2,Initial Release,2026-09-15,2026-09-15,,,doxtr-d2 initial current
 
 Sphinx-Extensions,doxtr-rag,2026-09-19,@now() + 1 months,,,doxtr-rag repo
-doxtr-rag,Initial Release,2026-09-19,2026-09-19,,,doxtr-rag initial current
+doxtr-rag,Initial Release,2026-09-19,2026-09-19,,,doxtr-rag initial
+doxtr-rag,v0.1.1,2026-09-21,2026-09-21,,,doxtr-rag
+doxtr-rag,v0.1.2,2026-09-27,2026-09-27,,,doxtr-rag current
 
 Sphinx-Extensions,doxtr-music,2026-09-20,@now() + 1 months,,,doxtr-music repo
-doxtr-music,Initial Release,2026-09-21,2026-09-21,,,doxtr-music initial current
+doxtr-music,Initial Release,2026-09-21,2026-09-21,,,doxtr-music initial
+doxtr-music,v0.1.1,2026-09-27,2026-09-27,,,doxtr-music current

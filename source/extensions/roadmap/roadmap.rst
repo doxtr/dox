@@ -17,5 +17,6 @@ PlantUML :xlink:`v1.2026.7 or newer <plantuml-home>` is required.  The extension
    links
    filtering
    styling
+   colored-roadmap
    doxtr-roadmap
    reference

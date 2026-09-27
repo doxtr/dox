@@ -1,0 +1,13 @@
+section,name,start,end,row_group,link,tags,color
+Design,Wireframes,@now() - 8 weeks,@now() - 4 weeks,,,design,dd:primary
+Design,Visual language,@now() - 6 weeks,@now() + 2 weeks,,,design,
+Design,Accessibility audit,@now() - 2 weeks,@now() + 6 weeks,,,design,#6A1B9A
+Engineering,API gateway,@now() - 10 weeks,@now() + 6 weeks,,,eng,#2E7D32
+API gateway,Auth service,@now() - 10 weeks,@now() - 2 weeks,,,eng,
+API gateway,Rate limiting,@now() - 1 weeks,@now() + 6 weeks,,,eng,#00838F
+Engineering,Data pipeline,@now() - 5 weeks,@now() + 7 weeks,,,eng,#C62828
+Data pipeline,Ingestion,@now() - 5 weeks,@now() - 1 weeks,,,eng,
+Data pipeline,Transform,@now() + 1 weeks,@now() + 7 weeks,,,eng,#EF6C00
+Launch,Beta program,@now() - 3 weeks,@now() + 5 weeks,,,pm,#1565C0
+Launch,GA readiness,@now() + 2 weeks,@now() + 8 weeks,,,pm,default
+Launch,Milestone GA,@now() + 8 weeks,@now() + 8 weeks,,,pm,dd:secondary

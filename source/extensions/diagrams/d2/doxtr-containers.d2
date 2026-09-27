@@ -1,0 +1,116 @@
+doxtr: The DoXtR Repository {
+
+   grid-columns: 2
+   grid-rows: 2
+
+   dox: Documentation {
+      explanation: |md 
+      # Documentation
+      
+      This repo contains the project documentation and showcase.
+      |
+   }
+
+   podmanContainers: Containers {
+      grid-rows: 1
+      grid-columns: 1
+      reactor: reactor {
+         grid-columns: 1
+         explanation: |md 
+         # Reactor
+      
+         This is the actual runtime for doxtr projects.
+         |
+      }
+
+      builders: Reactor Builder Images{
+         grid-columns: 2
+         reactorBuilderAssets: reactor-builder-assets {
+            explanation: |md 
+            # Reactor Builder Assets
+         
+            This repo contains the assets for the Reactor Builder.
+            |
+         }
+
+         reactorBuilderFonts: reactor-builder-fonts {
+            explanation: |md 
+            # Reactor Builder Fonts
+         
+            This repo contains the fonts for the Reactor Builder.
+            |
+         }
+      }
+
+      reactor <- builders: Uses
+   }
+
+   extensions: Sphinx Extensions {
+
+      grid-columns: 2
+
+      explanation: |md 
+      # Sphinx Extensions
+      
+      This repo contains the Sphinx extensions for the DoXtR project.
+      |
+
+      roadmap: Roadmap {
+         explanation: |md 
+         # Roadmap
+      
+         This repo contains the roadmap for the DoXtR project.
+         |
+      }
+
+      d2: D2 {
+         explanation: |md 
+         # D2
+      
+         This repo contains the D2 extension for the DoXtR project.
+         |
+      }
+
+      rag: RAG {
+         explanation: |md 
+         # RAG
+      
+         This repo contains the RAG extension for the DoXtR project.
+         |
+      }
+
+      pdfThemeCore: PDF Theme Core {
+         explanation: |md 
+         # PDF Theme Core
+      
+         This repo contains the core PDF theme for the DoXtR project.
+         |
+      }
+
+      music: Music {
+         explanation: |md 
+         # Music
+      
+         This repo contains the music extension for the DoXtR project.
+         |
+      }
+
+      drawio: doxtr Draw.io {
+         explanation: |md 
+         # Draw.io
+      
+         This repo contains the Draw.io extension for the DoXtR project.
+         |
+      }
+
+      dynacsv: doxtr Dynacsv {
+         explanation: |md 
+         # Dynacsv
+      
+         This repo contains the Dynacsv extension for the DoXtR project.
+         |
+      }
+   }
+
+   extensions -> podmanContainers.reactor: contains
+}
