@@ -29,6 +29,7 @@ extensions = [
     'doxtr_d2',
     'sphinxcontrib.xlink',
     'doxtr_roadmap',
+    'doxtr_doto',
     'sphinx_needs',
 ]
 

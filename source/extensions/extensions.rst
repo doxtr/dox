@@ -9,6 +9,7 @@ This Part contains examples of how to use the different extensions that are incl
 
    xlink/xlink
    roadmap/roadmap
+   doto/doto
    pdf-theming/pdf-theming
    diagrams/diagrams
    needs/needs
