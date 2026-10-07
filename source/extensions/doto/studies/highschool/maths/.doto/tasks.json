@@ -1,0 +1,203 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "MATHS-001": {
+      "title": "Review limits and continuity",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-04",
+      "tags": [
+        "calculus",
+        "revision"
+      ],
+      "depends_on": [],
+      "body": "Work through the chapter on limits; redo the epsilon-delta proofs.",
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-28T09:00:00",
+      "updated": "2026-04-29T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-04-29T14:00:00",
+          "stopped_at": "2026-04-29T15:35:00"
+        },
+        {
+          "started_at": "2026-04-30T16:30:00",
+          "stopped_at": "2026-04-30T17:30:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "MATHS-002": {
+      "title": "Problem set 7: derivatives",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-22",
+      "tags": [
+        "calculus",
+        "homework"
+      ],
+      "depends_on": [
+        "MATHS-001"
+      ],
+      "body": "Chain rule, implicit differentiation, related rates (Q1-Q12).",
+      "progress": 60,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-03T09:00:00",
+      "updated": "2026-05-04T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-15T10:00:00",
+          "stopped_at": "2026-05-15T11:15:00"
+        },
+        {
+          "started_at": "2026-05-17T20:15:00",
+          "stopped_at": "2026-05-17T21:05:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "MATHS-003": {
+      "title": "Prepare for integration techniques exam",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "open",
+      "due": "2026-06-10",
+      "tags": [
+        "calculus",
+        "exam"
+      ],
+      "depends_on": [],
+      "body": "Partial fractions, trig substitution, integration by parts.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-06T09:00:00",
+      "updated": "2026-05-07T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "MATHS-004": {
+      "title": "Linear algebra: eigenvalues worksheet",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "blocked",
+      "due": "2026-05-28",
+      "tags": [
+        "linear-algebra",
+        "homework"
+      ],
+      "depends_on": [
+        "MATHS-002"
+      ],
+      "body": "Blocked: need the lecturer's note on diagonalisation first.",
+      "progress": 20,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-08T09:00:00",
+      "updated": "2026-05-09T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T13:00:00",
+          "stopped_at": "2026-05-16T13:40:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "MATHS-005": {
+      "title": "Submit old statistics assignment (resit)",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-04-20",
+      "tags": [
+        "statistics"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-04-23T09:00:00",
+      "updated": "2026-04-24T09:00:00",
+      "archived": true,
+      "archived_on": "2026-04-24T09:00:00",
+      "worklogs": [
+        {
+          "started_at": "2026-04-18T09:30:00",
+          "stopped_at": "2026-04-18T11:30:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

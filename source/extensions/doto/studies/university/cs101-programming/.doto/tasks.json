@@ -1,0 +1,156 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "CS101-001": {
+      "title": "Lab 1: environment setup and hello world",
+      "assignee": "sam",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-02",
+      "tags": [
+        "lab"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-26T09:00:00",
+      "updated": "2026-04-27T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-04-27T10:00:00",
+          "stopped_at": "2026-04-27T10:50:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "CS101-002": {
+      "title": "Assignment 1: temperature converter",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-09",
+      "tags": [
+        "assignment"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-29T09:00:00",
+      "updated": "2026-04-30T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-06T14:00:00",
+          "stopped_at": "2026-05-06T15:30:00"
+        },
+        {
+          "started_at": "2026-05-07T16:00:00",
+          "stopped_at": "2026-05-07T16:40:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "CS101-003": {
+      "title": "Assignment 2: text-based number guessing game",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-23",
+      "tags": [
+        "assignment"
+      ],
+      "depends_on": [
+        "CS101-002"
+      ],
+      "body": "Loops, random module, input validation.",
+      "progress": 55,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-04T09:00:00",
+      "updated": "2026-05-05T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T19:00:00",
+          "stopped_at": "2026-05-16T20:10:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "CS101-004": {
+      "title": "Revise for midterm quiz",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-05",
+      "tags": [
+        "exam"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-06T09:00:00",
+      "updated": "2026-05-07T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

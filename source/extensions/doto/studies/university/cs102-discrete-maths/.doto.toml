@@ -1,0 +1,25 @@
+[doto]
+# Source directory (relative to this file)
+# source_dir = "."
+
+# JSON task store location
+json_file = ".doto/tasks.json"
+
+# Inbox file for new/reopened tasks
+inbox_file = "tasks/inbox.rst"
+
+# ID generation
+id_prefix = "DISC"
+id_sequential = true
+
+# Defaults for new tasks
+default_priority = "medium"
+default_status = "open"
+
+# Display settings
+date_format = "%Y-%m-%d"
+color = "auto"
+
+# Valid values
+statuses = ["open", "in-progress", "blocked", "done"]
+priorities = ["low", "medium", "high", "critical"]

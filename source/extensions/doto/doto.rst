@@ -22,3 +22,4 @@ element it renders to, so the page doubles as a live reference.
    cross-references
    cli
    configuration
+   studies/index

@@ -1,0 +1,115 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "HIST-001": {
+      "title": "Source analysis: causes of WWI",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-24",
+      "tags": [
+        "modern",
+        "essay"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 50,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T15:00:00",
+          "stopped_at": "2026-05-16T16:20:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "HIST-002": {
+      "title": "Timeline of the Industrial Revolution",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-10",
+      "tags": [
+        "modern"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-07T09:00:00",
+      "updated": "2026-05-08T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-09T14:00:00",
+          "stopped_at": "2026-05-09T15:00:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "HIST-003": {
+      "title": "Read set text on the Cold War",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-04",
+      "tags": [
+        "modern",
+        "reading"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-09T09:00:00",
+      "updated": "2026-05-10T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

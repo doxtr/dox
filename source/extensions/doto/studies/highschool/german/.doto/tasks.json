@@ -1,0 +1,115 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "GER-001": {
+      "title": "Lernen: Dativ und Akkusativ Präpositionen",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "in-progress",
+      "due": "2026-05-20",
+      "tags": [
+        "grammar",
+        "vocab"
+      ],
+      "depends_on": [],
+      "body": "Wechselpräpositionen: aus/bei/mit vs. durch/für/gegen.",
+      "progress": 50,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-04T09:00:00",
+      "updated": "2026-05-05T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-15T17:00:00",
+          "stopped_at": "2026-05-15T17:55:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "GER-002": {
+      "title": "Vokabeltest Kapitel 4 vorbereiten",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "open",
+      "due": "2026-05-27",
+      "tags": [
+        "vocab",
+        "test"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-07T09:00:00",
+      "updated": "2026-05-08T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "GER-003": {
+      "title": "Aufsatz: Mein letzter Urlaub",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-08",
+      "tags": [
+        "writing"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-07T16:00:00",
+          "stopped_at": "2026-05-07T17:25:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

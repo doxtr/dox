@@ -1,0 +1,154 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "ENG-001": {
+      "title": "Essay: themes in Macbeth",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-24",
+      "tags": [
+        "literature",
+        "essay"
+      ],
+      "depends_on": [],
+      "body": "1500 words on ambition and guilt. Draft intro + three body paragraphs.",
+      "progress": 55,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-03T09:00:00",
+      "updated": "2026-05-04T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-14T18:00:00",
+          "stopped_at": "2026-05-14T19:30:00"
+        },
+        {
+          "started_at": "2026-05-17T15:30:00",
+          "stopped_at": "2026-05-17T16:35:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "ENG-002": {
+      "title": "Read Chapters 1-5 of the set novel",
+      "assignee": "sam",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-10",
+      "tags": [
+        "literature",
+        "reading"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-09T20:00:00",
+          "stopped_at": "2026-05-09T21:10:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "ENG-003": {
+      "title": "Prepare oral presentation on persuasive techniques",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-02",
+      "tags": [
+        "language",
+        "presentation"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-08T09:00:00",
+      "updated": "2026-05-09T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "ENG-004": {
+      "title": "Peer review Alex's essay",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "blocked",
+      "due": "2026-05-23",
+      "tags": [
+        "essay"
+      ],
+      "depends_on": [
+        "ENG-001"
+      ],
+      "body": "Blocked until my own draft (ENG-001) is finished.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-09T09:00:00",
+      "updated": "2026-05-10T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

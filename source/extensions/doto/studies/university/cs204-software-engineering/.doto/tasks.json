@@ -1,0 +1,149 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "SE-001": {
+      "title": "Group project: write the requirements document",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-21",
+      "tags": [
+        "group-project"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 65,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-29T09:00:00",
+      "updated": "2026-04-30T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-15T15:00:00",
+          "stopped_at": "2026-05-15T16:30:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SE-002": {
+      "title": "Set up the team Git repository and CI",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-09",
+      "tags": [
+        "group-project",
+        "tooling"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-04-27T09:00:00",
+      "updated": "2026-04-28T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-08T14:00:00",
+          "stopped_at": "2026-05-08T15:10:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SE-003": {
+      "title": "Write unit tests for the parser module",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "blocked",
+      "due": "2026-05-28",
+      "tags": [
+        "group-project",
+        "testing"
+      ],
+      "depends_on": [
+        "SE-001"
+      ],
+      "body": "Blocked: parser interface isn't finalised until the requirements are signed off.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-04T09:00:00",
+      "updated": "2026-05-05T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SE-004": {
+      "title": "Prepare sprint 2 retrospective notes",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "open",
+      "due": "2026-06-01",
+      "tags": [
+        "group-project"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-07T09:00:00",
+      "updated": "2026-05-08T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

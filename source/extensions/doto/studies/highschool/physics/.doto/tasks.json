@@ -1,0 +1,159 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "PHYS-001": {
+      "title": "Lab report: projectile motion",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "done",
+      "due": "2026-05-06",
+      "tags": [
+        "mechanics",
+        "lab"
+      ],
+      "depends_on": [],
+      "body": "Write up the projectile experiment; include error analysis.",
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-30T09:00:00",
+      "updated": "2026-05-01T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-03T15:00:00",
+          "stopped_at": "2026-05-03T16:50:00"
+        },
+        {
+          "started_at": "2026-05-05T19:00:00",
+          "stopped_at": "2026-05-05T20:20:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "PHYS-002": {
+      "title": "Derive the equations of motion",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "in-progress",
+      "due": "2026-05-21",
+      "tags": [
+        "mechanics"
+      ],
+      "depends_on": [],
+      "body": "From constant acceleration, derive v, s, and v^2 relations.",
+      "progress": 40,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-04T09:00:00",
+      "updated": "2026-05-05T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T11:00:00",
+          "stopped_at": "2026-05-16T11:45:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "PHYS-003": {
+      "title": "Read chapter on electromagnetism",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-05-30",
+      "tags": [
+        "electromagnetism",
+        "reading"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-07T09:00:00",
+      "updated": "2026-05-08T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "PHYS-004": {
+      "title": "Set up oscilloscope for AC experiment",
+      "assignee": "jordan",
+      "priority": "high",
+      "status": "blocked",
+      "due": "2026-05-25",
+      "tags": [
+        "electromagnetism",
+        "lab"
+      ],
+      "depends_on": [
+        "PHYS-003"
+      ],
+      "body": "Blocked: the lab's second oscilloscope is out for repair.",
+      "progress": 10,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-09T09:00:00",
+      "updated": "2026-05-10T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-18T08:30:00",
+          "stopped_at": null
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

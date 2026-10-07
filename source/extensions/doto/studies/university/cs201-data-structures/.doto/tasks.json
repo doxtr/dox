@@ -1,0 +1,153 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "DSA-001": {
+      "title": "Implement a binary search tree",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-24",
+      "tags": [
+        "coursework",
+        "trees"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 60,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-29T09:00:00",
+      "updated": "2026-04-30T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-14T20:00:00",
+          "stopped_at": "2026-05-14T21:35:00"
+        },
+        {
+          "started_at": "2026-05-17T21:00:00",
+          "stopped_at": "2026-05-17T22:00:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "DSA-002": {
+      "title": "Big-O analysis worksheet",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-10",
+      "tags": [
+        "homework"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-26T09:00:00",
+      "updated": "2026-04-27T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-09T16:00:00",
+          "stopped_at": "2026-05-09T17:15:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "DSA-003": {
+      "title": "Coursework 2: shortest-path implementation",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "blocked",
+      "due": "2026-06-06",
+      "tags": [
+        "coursework",
+        "graphs"
+      ],
+      "depends_on": [
+        "DSA-001"
+      ],
+      "body": "Blocked: build the graph structure (DSA-001) before Dijkstra.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "DSA-004": {
+      "title": "Review sorting algorithm complexities",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "open",
+      "due": "2026-06-02",
+      "tags": [
+        "revision"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-07T09:00:00",
+      "updated": "2026-05-08T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

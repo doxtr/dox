@@ -1,0 +1,113 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "CALC-001": {
+      "title": "Weekly tutorial exercises (week 6)",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "done",
+      "due": "2026-05-12",
+      "tags": [
+        "tutorial"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-26T09:00:00",
+      "updated": "2026-04-27T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-11T17:00:00",
+          "stopped_at": "2026-05-11T18:00:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "CALC-002": {
+      "title": "Practice past-paper integration questions",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "open",
+      "due": "2026-06-08",
+      "tags": [
+        "exam"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-01T09:00:00",
+      "updated": "2026-05-02T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "CALC-003": {
+      "title": "Tutorial exercises (week 7)",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "in-progress",
+      "due": "2026-05-19",
+      "tags": [
+        "tutorial"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 40,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-03T09:00:00",
+      "updated": "2026-05-04T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-17T14:00:00",
+          "stopped_at": "2026-05-17T14:35:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

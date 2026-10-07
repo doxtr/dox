@@ -53,5 +53,6 @@ automatically from the document name and line number.
 Which will render like this:
 
 .. doto:: Write the getting-started guide
+   :id: extensions-doto-getting-started-L55
 
 That is all it takes.  The next page shows every option a task can carry.

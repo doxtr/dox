@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "repositories": [
+    {
+      "name": "source",
+      "path": "/workspaces/docs/source"
+    },
+    {
+      "name": "biology",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/biology"
+    },
+    {
+      "name": "chemistry",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/chemistry"
+    },
+    {
+      "name": "computer-basics",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/computer-basics"
+    },
+    {
+      "name": "english",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/english"
+    },
+    {
+      "name": "german",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/german"
+    },
+    {
+      "name": "history",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/history"
+    },
+    {
+      "name": "maths",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/maths"
+    },
+    {
+      "name": "physics",
+      "path": "/workspaces/docs/source/extensions/doto/studies/highschool/physics"
+    },
+    {
+      "name": "ac100-academic-writing",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/ac100-academic-writing"
+    },
+    {
+      "name": "cs101-programming",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs101-programming"
+    },
+    {
+      "name": "cs102-discrete-maths",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs102-discrete-maths"
+    },
+    {
+      "name": "cs103-calculus",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs103-calculus"
+    },
+    {
+      "name": "cs201-data-structures",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs201-data-structures"
+    },
+    {
+      "name": "cs202-databases",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs202-databases"
+    },
+    {
+      "name": "cs203-computer-systems",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs203-computer-systems"
+    },
+    {
+      "name": "cs204-software-engineering",
+      "path": "/workspaces/docs/source/extensions/doto/studies/university/cs204-software-engineering"
+    }
+  ],
+  "favorites": [],
+  "active_session": null,
+  "work_clock": {
+    "worklogs": []
+  },
+  "breaks": [],
+  "workweek_days": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "last_prompt_date": "2026-10-07",
+  "tui_layout": "time"
+}

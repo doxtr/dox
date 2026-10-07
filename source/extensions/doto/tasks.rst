@@ -176,7 +176,3 @@ Which will render like this:
    :status: blocked
    :depends-on: TASK-CRIT
 
-.. doto:: A completed task
-   :id: STATUS-DONE
-   :status: done
-   :progress: 100

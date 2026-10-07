@@ -1,0 +1,148 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "BIO-001": {
+      "title": "Label cell diagram (plant vs animal)",
+      "assignee": "sam",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-09",
+      "tags": [
+        "cells",
+        "homework"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-02T09:00:00",
+      "updated": "2026-05-03T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-08T14:00:00",
+          "stopped_at": "2026-05-08T14:40:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "BIO-002": {
+      "title": "Essay: natural selection and adaptation",
+      "assignee": "sam",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-26",
+      "tags": [
+        "evolution",
+        "essay"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 45,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-06T09:00:00",
+      "updated": "2026-05-07T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T19:00:00",
+          "stopped_at": "2026-05-16T20:10:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "BIO-003": {
+      "title": "Dissection lab prep",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "blocked",
+      "due": "2026-05-29",
+      "tags": [
+        "lab"
+      ],
+      "depends_on": [],
+      "body": "Blocked: awaiting the signed consent/safety form.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-08T09:00:00",
+      "updated": "2026-05-09T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "BIO-004": {
+      "title": "Revise photosynthesis equations",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-01",
+      "tags": [
+        "cells",
+        "revision"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-10T09:00:00",
+      "updated": "2026-05-11T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

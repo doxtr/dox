@@ -1,0 +1,113 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "AW-001": {
+      "title": "Reflective essay on study habits",
+      "assignee": "sam",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-05",
+      "tags": [
+        "essay"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-04-26T09:00:00",
+      "updated": "2026-04-27T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-04T16:00:00",
+          "stopped_at": "2026-05-04T17:15:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "AW-002": {
+      "title": "Annotated bibliography for research assignment",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "in-progress",
+      "due": "2026-05-26",
+      "tags": [
+        "research"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 40,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-02T09:00:00",
+      "updated": "2026-05-03T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T11:00:00",
+          "stopped_at": "2026-05-16T12:00:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "AW-003": {
+      "title": "Prepare 5-minute presentation",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-03",
+      "tags": [
+        "presentation"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

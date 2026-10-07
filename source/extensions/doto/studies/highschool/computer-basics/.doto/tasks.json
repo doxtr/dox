@@ -1,0 +1,118 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "COMP-001": {
+      "title": "Touch-typing practice to 40 wpm",
+      "assignee": "sam",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-11",
+      "tags": [
+        "skills"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-06T09:00:00",
+      "updated": "2026-05-07T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-09T18:00:00",
+          "stopped_at": "2026-05-09T18:30:00"
+        },
+        {
+          "started_at": "2026-05-10T18:00:00",
+          "stopped_at": "2026-05-10T18:30:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "COMP-002": {
+      "title": "Write first Python script (hello world + loops)",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "in-progress",
+      "due": "2026-05-25",
+      "tags": [
+        "programming",
+        "python"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 50,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-08T09:00:00",
+      "updated": "2026-05-09T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-16T20:00:00",
+          "stopped_at": "2026-05-16T20:50:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "COMP-003": {
+      "title": "Learn basic shell commands (ls, cd, mkdir)",
+      "assignee": "jordan",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-05-28",
+      "tags": [
+        "cli"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-10T09:00:00",
+      "updated": "2026-05-11T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}

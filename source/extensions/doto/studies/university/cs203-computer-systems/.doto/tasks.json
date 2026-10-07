@@ -1,0 +1,146 @@
+{
+  "version": 5,
+  "updated": "2026-05-18T09:00:00",
+  "tasks": {
+    "SYS-001": {
+      "title": "Lab: two's complement arithmetic",
+      "assignee": "jordan",
+      "priority": "low",
+      "status": "done",
+      "due": "2026-05-06",
+      "tags": [
+        "lab"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 100,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-04-29T09:00:00",
+      "updated": "2026-04-30T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-05T11:00:00",
+          "stopped_at": "2026-05-05T11:55:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SYS-002": {
+      "title": "Assembly assignment: loop in x86-64",
+      "assignee": "jordan",
+      "priority": "high",
+      "status": "in-progress",
+      "due": "2026-05-27",
+      "tags": [
+        "assignment",
+        "assembly"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 45,
+      "raci": {
+        "responsible": [
+          "jordan"
+        ],
+        "accountable": [
+          "jordan"
+        ]
+      },
+      "created": "2026-05-04T09:00:00",
+      "updated": "2026-05-05T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [
+        {
+          "started_at": "2026-05-17T12:00:00",
+          "stopped_at": "2026-05-17T13:05:00"
+        }
+      ],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SYS-003": {
+      "title": "Read chapter on cache memory",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "blocked",
+      "due": "2026-05-29",
+      "tags": [
+        "reading"
+      ],
+      "depends_on": [],
+      "body": "Blocked: library e-book licence is at capacity.",
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-05T09:00:00",
+      "updated": "2026-05-06T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    },
+    "SYS-004": {
+      "title": "Summarise process scheduling algorithms",
+      "assignee": "sam",
+      "priority": "medium",
+      "status": "open",
+      "due": "2026-06-07",
+      "tags": [
+        "revision"
+      ],
+      "depends_on": [],
+      "body": null,
+      "progress": 0,
+      "raci": {
+        "responsible": [
+          "sam"
+        ],
+        "accountable": [
+          "sam"
+        ]
+      },
+      "created": "2026-05-08T09:00:00",
+      "updated": "2026-05-09T09:00:00",
+      "archived": false,
+      "archived_on": null,
+      "worklogs": [],
+      "_sync": {
+        "rst_file": null,
+        "rst_line": null,
+        "rst_hash": null,
+        "snapshot": null
+      }
+    }
+  },
+  "series": {}
+}
